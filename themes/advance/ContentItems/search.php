@@ -16,8 +16,8 @@ use yii\helpers\Url;
     <?php if(Constants::_TYPE_LIVE == $content->type) {?>
     <div class="video-in-list">
       <span class="set-video">
-          <a href="<?=Url::toRoute(['site/live','id'=> $content->content_id,'type'=>Constants::_TYPE_SEARCH])?>">
-              <img class="thumb-video" src="<?= str_replace(\app\helpers\CConfig::URL_API,\app\helpers\CConfig::URL_REPLACE,$content->img_thumbnail)?>">
+          <a href="<?=Url::toRoute(['site/live','id'=> $content->id,'type'=>Constants::_TYPE_SEARCH])?>">
+              <img class="thumb-video" src="<?= $content->image?>">
           </a>
       </span>
     </div>
@@ -25,15 +25,12 @@ use yii\helpers\Url;
 
     <div class="video-in-list">
         <span class="set-video">
-             <a href="<?=Url::toRoute(['site/video','id'=> $content->content_id,'type'=>Constants::_TYPE_SEARCH])?>"><img class="thumb-video" src="<?= str_replace("http://api.msp.vn/","http://103.31.126.166/",$content->img_thumbnail)?>"></a>
+             <a href="<?=Url::toRoute(['site/video','id'=> $content->id,'type'=>Constants::_TYPE_SEARCH])?>"><img class="thumb-video" src="<?= $content->image?>"></a>
         </span>
-        <h4 class="media-heading name-content"> <?= str_replace(substr($content->display_name,55,strlen($content->display_name)),'...',$content->display_name)?> </h4>
+        <h4 class="media-heading name-content"> <?= $content->display_name?> </h4>
         <div class="clearfix"></div>
-        <p class="info-view"><img src="<?=Yii::$app->request->baseUrl?>/advance/images/ic-view.png" height="12"><span class="num-view"><?= $content->view_count?></span><span
+        <p class="info-view"><img src="<?=Yii::$app->request->baseUrl?>/advance/images/ic-view.png" height="12"><span class="num-view"><?= $content->rating_count?></span><span
                 class="price-view">
-                <?php if(!empty($content->price) && $content->is_free != 1) {?>Giá: <span><?= $content->price?>Đ</span><?php } else {?>
-                     <span>Xem miễn phí</span>
-        <?php }?>
             </span>
         </p>
     </div>
