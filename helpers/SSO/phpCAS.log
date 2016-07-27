@@ -1,0 +1,1108 @@
+56CB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+56CB .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+56CB .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+56CB .|    |    Starting a new session [Client.php:710]
+56CB .|    <= ''
+56CB .<= ''
+56CB .=> phpCAS::setNoCasServerValidation() [index.php:22]
+56CB .<= ''
+56CB .=> phpCAS::forceAuthentication() [index.php:25]
+56CB .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+56CB .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+56CB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+56CB .|    |    |    |    user = `841236202630' [Client.php:1229]
+56CB .|    |    |    |    proxies = "" [Client.php:1234]
+56CB .|    |    |    <= true
+56CB .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+56CB .|    |    <= true
+56CB .|    |    no need to authenticate [Client.php:964]
+56CB .|    <= true
+56CB .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+56CB .<= ''
+06DE .START phpCAS-1.2.2 ****************** [CAS.php:478]
+06DE .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+06DE .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+06DE .|    |    Starting a new session [Client.php:710]
+06DE .|    <= ''
+06DE .<= ''
+06DE .=> phpCAS::setNoCasServerValidation() [index.php:22]
+06DE .<= ''
+06DE .=> phpCAS::forceAuthentication() [index.php:25]
+06DE .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+06DE .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+06DE .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+06DE .|    |    |    |    user = `841236202630' [Client.php:1229]
+06DE .|    |    |    |    proxies = "" [Client.php:1234]
+06DE .|    |    |    <= true
+06DE .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+06DE .|    |    <= true
+06DE .|    |    no need to authenticate [Client.php:964]
+06DE .|    <= true
+06DE .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+06DE .<= ''
+06DE .=> phpCAS::logout() [index.php:32]
+06DE .|    => CAS_Client::logout(array ()) [CAS.php:1451]
+06DE .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+06DE .|    |    exit()
+06DE .|    |    -
+06DE .|    -
+DB21 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+DB21 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+DB21 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+DB21 .|    |    Starting a new session [Client.php:710]
+DB21 .|    |    ST or PT 'ST-492834-lom951faIezflZXgObDc-auth' found [Client.php:796]
+DB21 .|    <= ''
+DB21 .<= ''
+DB21 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+DB21 .<= ''
+DB21 .=> phpCAS::forceAuthentication() [index.php:25]
+DB21 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+DB21 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+DB21 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+DB21 .|    |    |    |    no user found [Client.php:1239]
+DB21 .|    |    |    <= false
+DB21 .|    |    |    PT `ST-492834-lom951faIezflZXgObDc-auth' is present [Client.php:1093]
+DB21 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+DB21 .|    |    |    |     [Client.php:2584]
+DB21 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+DB21 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+DB21 .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+DB21 .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+DB21 .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+DB21 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+DB21 .|    |    |    |    |    Response Body: 
+DB21 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+DB21 .|    |    |    |    |    	<cas:authenticationSuccess>
+DB21 .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+DB21 .|    |    |    |    |    
+DB21 .|    |    |    |    |    
+DB21 .|    |    |    |    |    	</cas:authenticationSuccess>
+DB21 .|    |    |    |    |    </cas:serviceResponse>
+DB21 .|    |    |    |    |    
+DB21 .|    |    |    |    |     [CurlRequest.php:133]
+DB21 .|    |    |    |    <= true
+DB21 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+DB21 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+DB21 .|    |    |    |    <= ''
+DB21 .|    |    |    |    => CAS_Client::renameSession('ST-492834-lom951faIezflZXgObDc-auth') [Client.php:2675]
+DB21 .|    |    |    |    |    Session ID: ST492834lom951faIezflZXgObDcauth [Client.php:2977]
+DB21 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+DB21 .|    |    |    |    <= ''
+DB21 .|    |    |    <= true
+DB21 .|    |    |    PT `ST-492834-lom951faIezflZXgObDc-auth' was validated [Client.php:1095]
+DB21 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+DB21 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+DB21 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+DB21 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+DB21 .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+DB21 .|    |    |    exit()
+DB21 .|    |    |    -
+DB21 .|    |    -
+DB21 .|    -
+31BB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+31BB .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+31BB .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+31BB .|    |    Starting a new session [Client.php:710]
+31BB .|    <= ''
+31BB .<= ''
+31BB .=> phpCAS::setNoCasServerValidation() [index.php:22]
+31BB .<= ''
+31BB .=> phpCAS::forceAuthentication() [index.php:25]
+31BB .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+31BB .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+31BB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+31BB .|    |    |    |    user = `841236202630' [Client.php:1229]
+31BB .|    |    |    |    proxies = "" [Client.php:1234]
+31BB .|    |    |    <= true
+31BB .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+31BB .|    |    <= true
+31BB .|    |    no need to authenticate [Client.php:964]
+31BB .|    <= true
+31BB .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+31BB .<= ''
+07D4 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+07D4 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+07D4 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+07D4 .|    |    Starting a new session [Client.php:710]
+07D4 .|    |    ST or PT 'ST-492852-6tJ7xNNhnhpaeZfqRW9M-auth' found [Client.php:796]
+07D4 .|    <= ''
+07D4 .<= ''
+07D4 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+07D4 .<= ''
+07D4 .=> phpCAS::forceAuthentication() [index.php:25]
+07D4 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+07D4 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+07D4 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+07D4 .|    |    |    |    user = `841236202630' [Client.php:1229]
+07D4 .|    |    |    |    proxies = "" [Client.php:1234]
+07D4 .|    |    |    <= true
+07D4 .|    |    |    ticket was present and will be discarded, use renewAuthenticate() [Client.php:1061]
+07D4 .|    |    |    => CAS_Client::getURL() [Client.php:1062]
+07D4 .|    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+07D4 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+07D4 .|    |    |    => CAS_Client::getURL() [Client.php:1063]
+07D4 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+07D4 .|    |    |    Prepare redirect to remove ticket: http://localhost/msp-portal/helpers/SSO/ [Client.php:1063]
+07D4 .|    |    |    exit()
+07D4 .|    |    |    -
+07D4 .|    |    -
+07D4 .|    -
+13EB .START phpCAS-1.2.2 ****************** [CAS.php:478]
+13EB .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+13EB .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+13EB .|    |    Starting a new session [Client.php:710]
+13EB .|    <= ''
+13EB .<= ''
+13EB .=> phpCAS::setNoCasServerValidation() [index.php:22]
+13EB .<= ''
+13EB .=> phpCAS::forceAuthentication() [index.php:25]
+13EB .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+13EB .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+13EB .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+13EB .|    |    |    |    user = `841236202630' [Client.php:1229]
+13EB .|    |    |    |    proxies = "" [Client.php:1234]
+13EB .|    |    |    <= true
+13EB .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+13EB .|    |    <= true
+13EB .|    |    no need to authenticate [Client.php:964]
+13EB .|    <= true
+13EB .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+13EB .<= ''
+FFB0 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+FFB0 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+FFB0 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+FFB0 .|    |    Starting a new session [Client.php:710]
+FFB0 .|    <= ''
+FFB0 .<= ''
+FFB0 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+FFB0 .<= ''
+FFB0 .=> phpCAS::forceAuthentication() [index.php:25]
+FFB0 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+FFB0 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+FFB0 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+FFB0 .|    |    |    |    user = `841236202630' [Client.php:1229]
+FFB0 .|    |    |    |    proxies = "" [Client.php:1234]
+FFB0 .|    |    |    <= true
+FFB0 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+FFB0 .|    |    <= true
+FFB0 .|    |    no need to authenticate [Client.php:964]
+FFB0 .|    <= true
+FFB0 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+FFB0 .<= ''
+FFB0 .=> phpCAS::logout() [index.php:32]
+FFB0 .|    => CAS_Client::logout(array ()) [CAS.php:1451]
+FFB0 .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+FFB0 .|    |    exit()
+FFB0 .|    |    -
+FFB0 .|    -
+370F .START phpCAS-1.2.2 ****************** [CAS.php:478]
+370F .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+370F .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+370F .|    |    Starting a new session [Client.php:710]
+370F .|    |    ST or PT 'ST-492854-hgQTWdBBRo4ZYRJ3H5fm-auth' found [Client.php:796]
+370F .|    <= ''
+370F .<= ''
+370F .=> phpCAS::setNoCasServerValidation() [index.php:22]
+370F .<= ''
+370F .=> phpCAS::forceAuthentication() [index.php:25]
+370F .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+370F .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+370F .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+370F .|    |    |    |    no user found [Client.php:1239]
+370F .|    |    |    <= false
+370F .|    |    |    PT `ST-492854-hgQTWdBBRo4ZYRJ3H5fm-auth' is present [Client.php:1093]
+370F .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+370F .|    |    |    |     [Client.php:2584]
+370F .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+370F .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+370F .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+370F .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+370F .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+370F .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+370F .|    |    |    |    |    Response Body: 
+370F .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+370F .|    |    |    |    |    	<cas:authenticationSuccess>
+370F .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+370F .|    |    |    |    |    
+370F .|    |    |    |    |    
+370F .|    |    |    |    |    	</cas:authenticationSuccess>
+370F .|    |    |    |    |    </cas:serviceResponse>
+370F .|    |    |    |    |    
+370F .|    |    |    |    |     [CurlRequest.php:133]
+370F .|    |    |    |    <= true
+370F .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+370F .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+370F .|    |    |    |    <= ''
+370F .|    |    |    |    => CAS_Client::renameSession('ST-492854-hgQTWdBBRo4ZYRJ3H5fm-auth') [Client.php:2675]
+370F .|    |    |    |    |    Session ID: ST492854hgQTWdBBRo4ZYRJ3H5fmauth [Client.php:2977]
+370F .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+370F .|    |    |    |    <= ''
+370F .|    |    |    <= true
+370F .|    |    |    PT `ST-492854-hgQTWdBBRo4ZYRJ3H5fm-auth' was validated [Client.php:1095]
+370F .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+370F .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+370F .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+370F .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+370F .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+370F .|    |    |    exit()
+370F .|    |    |    -
+370F .|    |    -
+370F .|    -
+8EAA .START phpCAS-1.2.2 ****************** [CAS.php:478]
+8EAA .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+8EAA .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+8EAA .|    |    Starting a new session [Client.php:710]
+8EAA .|    <= ''
+8EAA .<= ''
+8EAA .=> phpCAS::setNoCasServerValidation() [index.php:22]
+8EAA .<= ''
+8EAA .=> phpCAS::forceAuthentication() [index.php:25]
+8EAA .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+8EAA .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+8EAA .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+8EAA .|    |    |    |    user = `841236202630' [Client.php:1229]
+8EAA .|    |    |    |    proxies = "" [Client.php:1234]
+8EAA .|    |    |    <= true
+8EAA .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+8EAA .|    |    <= true
+8EAA .|    |    no need to authenticate [Client.php:964]
+8EAA .|    <= true
+8EAA .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+8EAA .<= ''
+FBB9 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+FBB9 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+FBB9 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+FBB9 .|    |    Starting a new session [Client.php:710]
+FBB9 .|    <= ''
+FBB9 .<= ''
+FBB9 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+FBB9 .<= ''
+FBB9 .=> phpCAS::forceAuthentication() [index.php:25]
+FBB9 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+FBB9 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+FBB9 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+FBB9 .|    |    |    |    user = `841236202630' [Client.php:1229]
+FBB9 .|    |    |    |    proxies = "" [Client.php:1234]
+FBB9 .|    |    |    <= true
+FBB9 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+FBB9 .|    |    <= true
+FBB9 .|    |    no need to authenticate [Client.php:964]
+FBB9 .|    <= true
+FBB9 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+FBB9 .<= ''
+FBB9 .=> phpCAS::logout() [index.php:32]
+FBB9 .|    => CAS_Client::logout(array ()) [CAS.php:1451]
+FBB9 .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+FBB9 .|    |    exit()
+FBB9 .|    |    -
+FBB9 .|    -
+0FD5 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+0FD5 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+0FD5 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+0FD5 .|    |    Starting a new session [Client.php:710]
+0FD5 .|    |    ST or PT 'ST-492897-oRLU4ewaeX5gsFAESRgn-auth' found [Client.php:796]
+0FD5 .|    <= ''
+0FD5 .<= ''
+0FD5 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+0FD5 .<= ''
+0FD5 .=> phpCAS::forceAuthentication() [index.php:25]
+0FD5 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+0FD5 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+0FD5 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+0FD5 .|    |    |    |    no user found [Client.php:1239]
+0FD5 .|    |    |    <= false
+0FD5 .|    |    |    PT `ST-492897-oRLU4ewaeX5gsFAESRgn-auth' is present [Client.php:1093]
+0FD5 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+0FD5 .|    |    |    |     [Client.php:2584]
+0FD5 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+0FD5 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+0FD5 .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+0FD5 .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+0FD5 .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+0FD5 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+0FD5 .|    |    |    |    |    Response Body: 
+0FD5 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+0FD5 .|    |    |    |    |    	<cas:authenticationSuccess>
+0FD5 .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+0FD5 .|    |    |    |    |    
+0FD5 .|    |    |    |    |    
+0FD5 .|    |    |    |    |    	</cas:authenticationSuccess>
+0FD5 .|    |    |    |    |    </cas:serviceResponse>
+0FD5 .|    |    |    |    |    
+0FD5 .|    |    |    |    |     [CurlRequest.php:133]
+0FD5 .|    |    |    |    <= true
+0FD5 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+0FD5 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+0FD5 .|    |    |    |    <= ''
+0FD5 .|    |    |    |    => CAS_Client::renameSession('ST-492897-oRLU4ewaeX5gsFAESRgn-auth') [Client.php:2675]
+0FD5 .|    |    |    |    |    Session ID: ST492897oRLU4ewaeX5gsFAESRgnauth [Client.php:2977]
+0FD5 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+0FD5 .|    |    |    |    <= ''
+0FD5 .|    |    |    <= true
+0FD5 .|    |    |    PT `ST-492897-oRLU4ewaeX5gsFAESRgn-auth' was validated [Client.php:1095]
+0FD5 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+0FD5 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+0FD5 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+0FD5 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+0FD5 .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+0FD5 .|    |    |    exit()
+0FD5 .|    |    |    -
+0FD5 .|    |    -
+0FD5 .|    -
+7F47 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+7F47 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+7F47 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+7F47 .|    |    Starting a new session [Client.php:710]
+7F47 .|    <= ''
+7F47 .<= ''
+7F47 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+7F47 .<= ''
+7F47 .=> phpCAS::forceAuthentication() [index.php:25]
+7F47 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+7F47 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+7F47 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+7F47 .|    |    |    |    user = `841236202630' [Client.php:1229]
+7F47 .|    |    |    |    proxies = "" [Client.php:1234]
+7F47 .|    |    |    <= true
+7F47 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+7F47 .|    |    <= true
+7F47 .|    |    no need to authenticate [Client.php:964]
+7F47 .|    <= true
+7F47 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+7F47 .<= ''
+7D88 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+7D88 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+7D88 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+7D88 .|    |    Starting a new session [Client.php:710]
+7D88 .|    |    ST or PT 'ST-492911-aD9ndsRJQ2aQlQ3acQxr-auth' found [Client.php:796]
+7D88 .|    <= ''
+7D88 .<= ''
+7D88 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+7D88 .<= ''
+7D88 .=> phpCAS::forceAuthentication() [index.php:25]
+7D88 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+7D88 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+7D88 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+7D88 .|    |    |    |    user = `841236202630' [Client.php:1229]
+7D88 .|    |    |    |    proxies = "" [Client.php:1234]
+7D88 .|    |    |    <= true
+7D88 .|    |    |    ticket was present and will be discarded, use renewAuthenticate() [Client.php:1061]
+7D88 .|    |    |    => CAS_Client::getURL() [Client.php:1062]
+7D88 .|    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+7D88 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+7D88 .|    |    |    => CAS_Client::getURL() [Client.php:1063]
+7D88 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+7D88 .|    |    |    Prepare redirect to remove ticket: http://localhost/msp-portal/helpers/SSO/ [Client.php:1063]
+7D88 .|    |    |    exit()
+7D88 .|    |    |    -
+7D88 .|    |    -
+7D88 .|    -
+3C66 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+3C66 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+3C66 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+3C66 .|    |    Starting a new session [Client.php:710]
+3C66 .|    <= ''
+3C66 .<= ''
+3C66 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+3C66 .<= ''
+3C66 .=> phpCAS::forceAuthentication() [index.php:25]
+3C66 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+3C66 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+3C66 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+3C66 .|    |    |    |    user = `841236202630' [Client.php:1229]
+3C66 .|    |    |    |    proxies = "" [Client.php:1234]
+3C66 .|    |    |    <= true
+3C66 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+3C66 .|    |    <= true
+3C66 .|    |    no need to authenticate [Client.php:964]
+3C66 .|    <= true
+3C66 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+3C66 .<= ''
+0BEA .START phpCAS-1.2.2 ****************** [CAS.php:478]
+0BEA .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+0BEA .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+0BEA .|    |    Starting a new session [Client.php:710]
+0BEA .|    <= ''
+0BEA .<= ''
+0BEA .=> phpCAS::setNoCasServerValidation() [index.php:22]
+0BEA .<= ''
+0BEA .=> phpCAS::forceAuthentication() [index.php:25]
+0BEA .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+0BEA .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+0BEA .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+0BEA .|    |    |    |    no user found [Client.php:1239]
+0BEA .|    |    |    <= false
+0BEA .|    |    |    no ticket found [Client.php:1120]
+0BEA .|    |    <= false
+0BEA .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+0BEA .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+0BEA .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+0BEA .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+0BEA .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+0BEA .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+0BEA .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+0BEA .|    |    |    exit()
+0BEA .|    |    |    -
+0BEA .|    |    -
+0BEA .|    -
+87FF .START phpCAS-1.2.2 ****************** [CAS.php:478]
+87FF .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+87FF .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+87FF .|    |    Starting a new session [Client.php:710]
+87FF .|    |    ST or PT 'ST-500105-WfhxHSS9vx6nJbLbyZVO-auth' found [Client.php:796]
+87FF .|    <= ''
+87FF .<= ''
+87FF .=> phpCAS::setNoCasServerValidation() [index.php:22]
+87FF .<= ''
+87FF .=> phpCAS::forceAuthentication() [index.php:25]
+87FF .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+87FF .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+87FF .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+87FF .|    |    |    |    no user found [Client.php:1239]
+87FF .|    |    |    <= false
+87FF .|    |    |    PT `ST-500105-WfhxHSS9vx6nJbLbyZVO-auth' is present [Client.php:1093]
+87FF .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+87FF .|    |    |    |     [Client.php:2584]
+87FF .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+87FF .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+87FF .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+87FF .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+87FF .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+87FF .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+87FF .|    |    |    |    |    Response Body: 
+87FF .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+87FF .|    |    |    |    |    	<cas:authenticationSuccess>
+87FF .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+87FF .|    |    |    |    |    
+87FF .|    |    |    |    |    
+87FF .|    |    |    |    |    	</cas:authenticationSuccess>
+87FF .|    |    |    |    |    </cas:serviceResponse>
+87FF .|    |    |    |    |    
+87FF .|    |    |    |    |     [CurlRequest.php:133]
+87FF .|    |    |    |    <= true
+87FF .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+87FF .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+87FF .|    |    |    |    <= ''
+87FF .|    |    |    |    => CAS_Client::renameSession('ST-500105-WfhxHSS9vx6nJbLbyZVO-auth') [Client.php:2675]
+87FF .|    |    |    |    |    Session ID: ST500105WfhxHSS9vx6nJbLbyZVOauth [Client.php:2977]
+87FF .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+87FF .|    |    |    |    <= ''
+87FF .|    |    |    <= true
+87FF .|    |    |    PT `ST-500105-WfhxHSS9vx6nJbLbyZVO-auth' was validated [Client.php:1095]
+87FF .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+87FF .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+87FF .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+87FF .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+87FF .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+87FF .|    |    |    exit()
+87FF .|    |    |    -
+87FF .|    |    -
+87FF .|    -
+90AC .START phpCAS-1.2.2 ****************** [CAS.php:478]
+90AC .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+90AC .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+90AC .|    |    Starting a new session [Client.php:710]
+90AC .|    <= ''
+90AC .<= ''
+90AC .=> phpCAS::setNoCasServerValidation() [index.php:22]
+90AC .<= ''
+90AC .=> phpCAS::forceAuthentication() [index.php:25]
+90AC .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+90AC .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+90AC .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+90AC .|    |    |    |    user = `841236202630' [Client.php:1229]
+90AC .|    |    |    |    proxies = "" [Client.php:1234]
+90AC .|    |    |    <= true
+90AC .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+90AC .|    |    <= true
+90AC .|    |    no need to authenticate [Client.php:964]
+90AC .|    <= true
+90AC .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+90AC .<= ''
+71BE .START phpCAS-1.2.2 ****************** [CAS.php:478]
+71BE .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+71BE .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+71BE .|    |    Starting a new session [Client.php:710]
+71BE .|    <= ''
+71BE .<= ''
+71BE .=> phpCAS::setNoCasServerValidation() [index.php:22]
+71BE .<= ''
+71BE .=> phpCAS::forceAuthentication() [index.php:25]
+71BE .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+71BE .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+71BE .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+71BE .|    |    |    |    user = `841236202630' [Client.php:1229]
+71BE .|    |    |    |    proxies = "" [Client.php:1234]
+71BE .|    |    |    <= true
+71BE .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+71BE .|    |    <= true
+71BE .|    |    no need to authenticate [Client.php:964]
+71BE .|    <= true
+71BE .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+71BE .<= ''
+71BE .=> phpCAS::logout() [index.php:32]
+71BE .|    => CAS_Client::logout(array ()) [CAS.php:1452]
+71BE .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+71BE .|    |    exit()
+71BE .|    |    -
+71BE .|    -
+1F20 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+1F20 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+1F20 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+1F20 .|    |    Starting a new session [Client.php:710]
+1F20 .|    <= ''
+1F20 .<= ''
+1F20 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+1F20 .<= ''
+1F20 .=> phpCAS::forceAuthentication() [index.php:25]
+1F20 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+1F20 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+1F20 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+1F20 .|    |    |    |    no user found [Client.php:1239]
+1F20 .|    |    |    <= false
+1F20 .|    |    |    no ticket found [Client.php:1120]
+1F20 .|    |    <= false
+1F20 .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+1F20 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+1F20 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+1F20 .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+1F20 .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+1F20 .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+1F20 .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+1F20 .|    |    |    exit()
+1F20 .|    |    |    -
+1F20 .|    |    -
+1F20 .|    -
+168B .START phpCAS-1.2.2 ****************** [CAS.php:478]
+168B .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+168B .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+168B .|    |    Starting a new session [Client.php:710]
+168B .|    |    ST or PT 'ST-500110-CvJsW4HO6I0yzCQnMSbp-auth' found [Client.php:796]
+168B .|    <= ''
+168B .<= ''
+168B .=> phpCAS::setNoCasServerValidation() [index.php:22]
+168B .<= ''
+168B .=> phpCAS::forceAuthentication() [index.php:25]
+168B .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+168B .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+168B .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+168B .|    |    |    |    no user found [Client.php:1239]
+168B .|    |    |    <= false
+168B .|    |    |    PT `ST-500110-CvJsW4HO6I0yzCQnMSbp-auth' is present [Client.php:1093]
+168B .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+168B .|    |    |    |     [Client.php:2584]
+168B .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+168B .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+168B .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+168B .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+168B .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+168B .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+168B .|    |    |    |    |    Response Body: 
+168B .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+168B .|    |    |    |    |    	<cas:authenticationSuccess>
+168B .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+168B .|    |    |    |    |    
+168B .|    |    |    |    |    
+168B .|    |    |    |    |    	</cas:authenticationSuccess>
+168B .|    |    |    |    |    </cas:serviceResponse>
+168B .|    |    |    |    |    
+168B .|    |    |    |    |     [CurlRequest.php:133]
+168B .|    |    |    |    <= true
+168B .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+168B .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+168B .|    |    |    |    <= ''
+168B .|    |    |    |    => CAS_Client::renameSession('ST-500110-CvJsW4HO6I0yzCQnMSbp-auth') [Client.php:2675]
+168B .|    |    |    |    |    Session ID: ST500110CvJsW4HO6I0yzCQnMSbpauth [Client.php:2977]
+168B .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+168B .|    |    |    |    <= ''
+168B .|    |    |    <= true
+168B .|    |    |    PT `ST-500110-CvJsW4HO6I0yzCQnMSbp-auth' was validated [Client.php:1095]
+168B .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+168B .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+168B .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+168B .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+168B .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+168B .|    |    |    exit()
+168B .|    |    |    -
+168B .|    |    -
+168B .|    -
+F6E5 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F6E5 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+F6E5 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+F6E5 .|    |    Starting a new session [Client.php:710]
+F6E5 .|    <= ''
+F6E5 .<= ''
+F6E5 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+F6E5 .<= ''
+F6E5 .=> phpCAS::forceAuthentication() [index.php:25]
+F6E5 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+F6E5 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+F6E5 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F6E5 .|    |    |    |    user = `841236202630' [Client.php:1229]
+F6E5 .|    |    |    |    proxies = "" [Client.php:1234]
+F6E5 .|    |    |    <= true
+F6E5 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F6E5 .|    |    <= true
+F6E5 .|    |    no need to authenticate [Client.php:964]
+F6E5 .|    <= true
+F6E5 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+F6E5 .<= ''
+9728 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+9728 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+9728 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+9728 .|    |    Starting a new session [Client.php:710]
+9728 .|    <= ''
+9728 .<= ''
+9728 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+9728 .<= ''
+9728 .=> phpCAS::forceAuthentication() [index.php:25]
+9728 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+9728 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+9728 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+9728 .|    |    |    |    user = `841236202630' [Client.php:1229]
+9728 .|    |    |    |    proxies = "" [Client.php:1234]
+9728 .|    |    |    <= true
+9728 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+9728 .|    |    <= true
+9728 .|    |    no need to authenticate [Client.php:964]
+9728 .|    <= true
+9728 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+9728 .<= ''
+F07A .START phpCAS-1.2.2 ****************** [CAS.php:478]
+F07A .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+F07A .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+F07A .|    |    Starting a new session [Client.php:710]
+F07A .|    <= ''
+F07A .<= ''
+F07A .=> phpCAS::setNoCasServerValidation() [index.php:22]
+F07A .<= ''
+F07A .=> phpCAS::forceAuthentication() [index.php:25]
+F07A .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+F07A .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+F07A .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+F07A .|    |    |    |    user = `841236202630' [Client.php:1229]
+F07A .|    |    |    |    proxies = "" [Client.php:1234]
+F07A .|    |    |    <= true
+F07A .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+F07A .|    |    <= true
+F07A .|    |    no need to authenticate [Client.php:964]
+F07A .|    <= true
+F07A .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+F07A .<= ''
+F07A .=> phpCAS::logout() [index.php:32]
+F07A .|    => CAS_Client::logout(array ()) [CAS.php:1452]
+F07A .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+F07A .|    |    exit()
+F07A .|    |    -
+F07A .|    -
+481D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+481D .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+481D .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+481D .|    |    Starting a new session [Client.php:710]
+481D .|    <= ''
+481D .<= ''
+481D .=> phpCAS::setNoCasServerValidation() [index.php:22]
+481D .<= ''
+481D .=> phpCAS::forceAuthentication() [index.php:25]
+481D .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+481D .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+481D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+481D .|    |    |    |    no user found [Client.php:1239]
+481D .|    |    |    <= false
+481D .|    |    |    no ticket found [Client.php:1120]
+481D .|    |    <= false
+481D .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+481D .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+481D .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+481D .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+481D .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+481D .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+481D .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+481D .|    |    |    exit()
+481D .|    |    |    -
+481D .|    |    -
+481D .|    -
+9124 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+9124 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+9124 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+9124 .|    |    Starting a new session [Client.php:710]
+9124 .|    |    ST or PT 'ST-500294-7kN43DgbF6ElucnWS3MD-auth' found [Client.php:796]
+9124 .|    <= ''
+9124 .<= ''
+9124 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+9124 .<= ''
+9124 .=> phpCAS::forceAuthentication() [index.php:25]
+9124 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+9124 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+9124 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+9124 .|    |    |    |    no user found [Client.php:1239]
+9124 .|    |    |    <= false
+9124 .|    |    |    PT `ST-500294-7kN43DgbF6ElucnWS3MD-auth' is present [Client.php:1093]
+9124 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+9124 .|    |    |    |     [Client.php:2584]
+9124 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+9124 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+9124 .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+9124 .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+9124 .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+9124 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+9124 .|    |    |    |    |    Response Body: 
+9124 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+9124 .|    |    |    |    |    	<cas:authenticationSuccess>
+9124 .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+9124 .|    |    |    |    |    
+9124 .|    |    |    |    |    
+9124 .|    |    |    |    |    	</cas:authenticationSuccess>
+9124 .|    |    |    |    |    </cas:serviceResponse>
+9124 .|    |    |    |    |    
+9124 .|    |    |    |    |     [CurlRequest.php:133]
+9124 .|    |    |    |    <= true
+9124 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+9124 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+9124 .|    |    |    |    <= ''
+9124 .|    |    |    |    => CAS_Client::renameSession('ST-500294-7kN43DgbF6ElucnWS3MD-auth') [Client.php:2675]
+9124 .|    |    |    |    |    Session ID: ST5002947kN43DgbF6ElucnWS3MDauth [Client.php:2977]
+9124 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+9124 .|    |    |    |    <= ''
+9124 .|    |    |    <= true
+9124 .|    |    |    PT `ST-500294-7kN43DgbF6ElucnWS3MD-auth' was validated [Client.php:1095]
+9124 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+9124 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+9124 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+9124 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+9124 .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+9124 .|    |    |    exit()
+9124 .|    |    |    -
+9124 .|    |    -
+9124 .|    -
+54CC .START phpCAS-1.2.2 ****************** [CAS.php:478]
+54CC .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+54CC .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+54CC .|    |    Starting a new session [Client.php:710]
+54CC .|    <= ''
+54CC .<= ''
+54CC .=> phpCAS::setNoCasServerValidation() [index.php:22]
+54CC .<= ''
+54CC .=> phpCAS::forceAuthentication() [index.php:25]
+54CC .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+54CC .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+54CC .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+54CC .|    |    |    |    user = `841236202630' [Client.php:1229]
+54CC .|    |    |    |    proxies = "" [Client.php:1234]
+54CC .|    |    |    <= true
+54CC .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+54CC .|    |    <= true
+54CC .|    |    no need to authenticate [Client.php:964]
+54CC .|    <= true
+54CC .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+54CC .<= ''
+CF20 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+CF20 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+CF20 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+CF20 .|    |    Starting a new session [Client.php:710]
+CF20 .|    <= ''
+CF20 .<= ''
+CF20 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+CF20 .<= ''
+CF20 .=> phpCAS::forceAuthentication() [index.php:25]
+CF20 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+CF20 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+CF20 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+CF20 .|    |    |    |    user = `841236202630' [Client.php:1229]
+CF20 .|    |    |    |    proxies = "" [Client.php:1234]
+CF20 .|    |    |    <= true
+CF20 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+CF20 .|    |    <= true
+CF20 .|    |    no need to authenticate [Client.php:964]
+CF20 .|    <= true
+CF20 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+CF20 .<= ''
+CF20 .=> phpCAS::logout() [index.php:32]
+CF20 .|    => CAS_Client::logout(array ()) [CAS.php:1452]
+CF20 .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+CF20 .|    |    exit()
+CF20 .|    |    -
+CF20 .|    -
+0E9D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+0E9D .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+0E9D .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+0E9D .|    |    Starting a new session [Client.php:710]
+0E9D .|    <= ''
+0E9D .<= ''
+0E9D .=> phpCAS::setNoCasServerValidation() [index.php:22]
+0E9D .<= ''
+0E9D .=> phpCAS::forceAuthentication() [index.php:25]
+0E9D .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+0E9D .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+0E9D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+0E9D .|    |    |    |    no user found [Client.php:1239]
+0E9D .|    |    |    <= false
+0E9D .|    |    |    no ticket found [Client.php:1120]
+0E9D .|    |    <= false
+0E9D .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+0E9D .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+0E9D .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+0E9D .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+0E9D .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+0E9D .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+0E9D .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+0E9D .|    |    |    exit()
+0E9D .|    |    |    -
+0E9D .|    |    -
+0E9D .|    -
+15D5 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+15D5 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+15D5 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+15D5 .|    |    Starting a new session [Client.php:710]
+15D5 .|    |    ST or PT 'ST-500339-UWB6dmCJzc6XwyG0gb1D-auth' found [Client.php:796]
+15D5 .|    <= ''
+15D5 .<= ''
+15D5 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+15D5 .<= ''
+15D5 .=> phpCAS::forceAuthentication() [index.php:25]
+15D5 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+15D5 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+15D5 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+15D5 .|    |    |    |    no user found [Client.php:1239]
+15D5 .|    |    |    <= false
+15D5 .|    |    |    PT `ST-500339-UWB6dmCJzc6XwyG0gb1D-auth' is present [Client.php:1093]
+15D5 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+15D5 .|    |    |    |     [Client.php:2584]
+15D5 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+15D5 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+15D5 .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+15D5 .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+15D5 .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+15D5 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+15D5 .|    |    |    |    |    Response Body: 
+15D5 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+15D5 .|    |    |    |    |    	<cas:authenticationSuccess>
+15D5 .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+15D5 .|    |    |    |    |    
+15D5 .|    |    |    |    |    
+15D5 .|    |    |    |    |    	</cas:authenticationSuccess>
+15D5 .|    |    |    |    |    </cas:serviceResponse>
+15D5 .|    |    |    |    |    
+15D5 .|    |    |    |    |     [CurlRequest.php:133]
+15D5 .|    |    |    |    <= true
+15D5 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+15D5 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+15D5 .|    |    |    |    <= ''
+15D5 .|    |    |    |    => CAS_Client::renameSession('ST-500339-UWB6dmCJzc6XwyG0gb1D-auth') [Client.php:2675]
+15D5 .|    |    |    |    |    Session ID: ST500339UWB6dmCJzc6XwyG0gb1Dauth [Client.php:2977]
+15D5 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+15D5 .|    |    |    |    <= ''
+15D5 .|    |    |    <= true
+15D5 .|    |    |    PT `ST-500339-UWB6dmCJzc6XwyG0gb1D-auth' was validated [Client.php:1095]
+15D5 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+15D5 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+15D5 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+15D5 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+15D5 .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+15D5 .|    |    |    exit()
+15D5 .|    |    |    -
+15D5 .|    |    -
+15D5 .|    -
+34B6 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+34B6 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+34B6 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+34B6 .|    |    Starting a new session [Client.php:710]
+34B6 .|    <= ''
+34B6 .<= ''
+34B6 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+34B6 .<= ''
+34B6 .=> phpCAS::forceAuthentication() [index.php:25]
+34B6 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+34B6 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+34B6 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+34B6 .|    |    |    |    user = `841236202630' [Client.php:1229]
+34B6 .|    |    |    |    proxies = "" [Client.php:1234]
+34B6 .|    |    |    <= true
+34B6 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+34B6 .|    |    <= true
+34B6 .|    |    no need to authenticate [Client.php:964]
+34B6 .|    <= true
+34B6 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+34B6 .<= ''
+9684 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+9684 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+9684 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+9684 .|    |    Starting a new session [Client.php:710]
+9684 .|    <= ''
+9684 .<= ''
+9684 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+9684 .<= ''
+9684 .=> phpCAS::forceAuthentication() [index.php:25]
+9684 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+9684 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+9684 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+9684 .|    |    |    |    user = `841236202630' [Client.php:1229]
+9684 .|    |    |    |    proxies = "" [Client.php:1234]
+9684 .|    |    |    <= true
+9684 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+9684 .|    |    <= true
+9684 .|    |    no need to authenticate [Client.php:964]
+9684 .|    <= true
+9684 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+9684 .<= ''
+9684 .=> phpCAS::logout() [index.php:32]
+9684 .|    => CAS_Client::logout(array ()) [CAS.php:1452]
+9684 .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+9684 .|    |    exit()
+9684 .|    |    -
+9684 .|    -
+583D .START phpCAS-1.2.2 ****************** [CAS.php:478]
+583D .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+583D .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+583D .|    |    Starting a new session [Client.php:710]
+583D .|    <= ''
+583D .<= ''
+583D .=> phpCAS::setNoCasServerValidation() [index.php:22]
+583D .<= ''
+583D .=> phpCAS::forceAuthentication() [index.php:25]
+583D .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+583D .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+583D .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+583D .|    |    |    |    no user found [Client.php:1239]
+583D .|    |    |    <= false
+583D .|    |    |    no ticket found [Client.php:1120]
+583D .|    |    <= false
+583D .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+583D .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+583D .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+583D .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+583D .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+583D .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+583D .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+583D .|    |    |    exit()
+583D .|    |    |    -
+583D .|    |    -
+583D .|    -
+1947 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+1947 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+1947 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+1947 .|    |    Starting a new session [Client.php:710]
+1947 .|    |    ST or PT 'ST-500374-oLysyYw5nf2HurqKwXJB-auth' found [Client.php:796]
+1947 .|    <= ''
+1947 .<= ''
+1947 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+1947 .<= ''
+1947 .=> phpCAS::forceAuthentication() [index.php:25]
+1947 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+1947 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+1947 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+1947 .|    |    |    |    no user found [Client.php:1239]
+1947 .|    |    |    <= false
+1947 .|    |    |    PT `ST-500374-oLysyYw5nf2HurqKwXJB-auth' is present [Client.php:1093]
+1947 .|    |    |    => CAS_Client::validatePT('', NULL, NULL) [Client.php:1094]
+1947 .|    |    |    |     [Client.php:2584]
+1947 .|    |    |    |    => CAS_Client::getServerProxyValidateURL() [Client.php:2586]
+1947 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:475]
+1947 .|    |    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+1947 .|    |    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+1947 .|    |    |    |    <= 'https://vinaphone.com.vn/auth//proxyValidate?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+1947 .|    |    |    |    => CAS_CurlRequest::_sendRequest() [AbstractRequest.php:191]
+1947 .|    |    |    |    |    Response Body: 
+1947 .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+1947 .|    |    |    |    |    	<cas:authenticationSuccess>
+1947 .|    |    |    |    |    		<cas:user>841236202630</cas:user>
+1947 .|    |    |    |    |    
+1947 .|    |    |    |    |    
+1947 .|    |    |    |    |    	</cas:authenticationSuccess>
+1947 .|    |    |    |    |    </cas:serviceResponse>
+1947 .|    |    |    |    |    
+1947 .|    |    |    |    |     [CurlRequest.php:133]
+1947 .|    |    |    |    <= true
+1947 .|    |    |    |    => CAS_Client::readExtraAttributesCas20(DOMNodeList) [Client.php:2646]
+1947 .|    |    |    |    |    Testing for rubycas style attributes [Client.php:2741]
+1947 .|    |    |    |    <= ''
+1947 .|    |    |    |    => CAS_Client::renameSession('ST-500374-oLysyYw5nf2HurqKwXJB-auth') [Client.php:2675]
+1947 .|    |    |    |    |    Session ID: ST500374oLysyYw5nf2HurqKwXJBauth [Client.php:2977]
+1947 .|    |    |    |    |    Restoring old session vars [Client.php:2980]
+1947 .|    |    |    |    <= ''
+1947 .|    |    |    <= true
+1947 .|    |    |    PT `ST-500374-oLysyYw5nf2HurqKwXJB-auth' was validated [Client.php:1095]
+1947 .|    |    |    => CAS_Client::getURL() [Client.php:1146]
+1947 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+1947 .|    |    |    => CAS_Client::getURL() [Client.php:1147]
+1947 .|    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+1947 .|    |    |    Prepare redirect to : http://localhost/msp-portal/helpers/SSO/ [Client.php:1147]
+1947 .|    |    |    exit()
+1947 .|    |    |    -
+1947 .|    |    -
+1947 .|    -
+A4F1 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+A4F1 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+A4F1 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+A4F1 .|    |    Starting a new session [Client.php:710]
+A4F1 .|    <= ''
+A4F1 .<= ''
+A4F1 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+A4F1 .<= ''
+A4F1 .=> phpCAS::forceAuthentication() [index.php:25]
+A4F1 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+A4F1 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+A4F1 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+A4F1 .|    |    |    |    user = `841236202630' [Client.php:1229]
+A4F1 .|    |    |    |    proxies = "" [Client.php:1234]
+A4F1 .|    |    |    <= true
+A4F1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+A4F1 .|    |    <= true
+A4F1 .|    |    no need to authenticate [Client.php:964]
+A4F1 .|    <= true
+A4F1 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+A4F1 .<= ''
+D0F4 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+D0F4 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+D0F4 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+D0F4 .|    |    Starting a new session [Client.php:710]
+D0F4 .|    <= ''
+D0F4 .<= ''
+D0F4 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+D0F4 .<= ''
+D0F4 .=> phpCAS::forceAuthentication() [index.php:25]
+D0F4 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+D0F4 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+D0F4 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+D0F4 .|    |    |    |    user = `841236202630' [Client.php:1229]
+D0F4 .|    |    |    |    proxies = "" [Client.php:1234]
+D0F4 .|    |    |    <= true
+D0F4 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1069]
+D0F4 .|    |    <= true
+D0F4 .|    |    no need to authenticate [Client.php:964]
+D0F4 .|    <= true
+D0F4 .|    no need to authenticate (user `841236202630' is already authenticated) [CAS.php:1097]
+D0F4 .<= ''
+D0F4 .=> phpCAS::logout() [index.php:32]
+D0F4 .|    => CAS_Client::logout(array ()) [CAS.php:1452]
+D0F4 .|    |    Prepare redirect to : https://vinaphone.com.vn/auth//logout [Client.php:1285]
+D0F4 .|    |    exit()
+D0F4 .|    |    -
+D0F4 .|    -
+2BE5 .START phpCAS-1.2.2 ****************** [CAS.php:478]
+2BE5 .=> phpCAS::client('2.0', 'vinaphone.com.vn/auth', 443, '/') [index.php:13]
+2BE5 .|    => CAS_Client::__construct('2.0', false, 'vinaphone.com.vn/auth', 443, '/', true) [CAS.php:379]
+2BE5 .|    |    Starting a new session [Client.php:710]
+2BE5 .|    <= ''
+2BE5 .<= ''
+2BE5 .=> phpCAS::setNoCasServerValidation() [index.php:22]
+2BE5 .<= ''
+2BE5 .=> phpCAS::forceAuthentication() [index.php:25]
+2BE5 .|    => CAS_Client::forceAuthentication() [CAS.php:1081]
+2BE5 .|    |    => CAS_Client::isAuthenticated() [Client.php:962]
+2BE5 .|    |    |    => CAS_Client::wasPreviouslyAuthenticated() [Client.php:1058]
+2BE5 .|    |    |    |    no user found [Client.php:1239]
+2BE5 .|    |    |    <= false
+2BE5 .|    |    |    no ticket found [Client.php:1120]
+2BE5 .|    |    <= false
+2BE5 .|    |    => CAS_Client::redirectToCas(false) [Client.php:971]
+2BE5 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1255]
+2BE5 .|    |    |    |    => CAS_Client::getURL() [Client.php:356]
+2BE5 .|    |    |    |    |    Final URI: http://localhost/msp-portal/helpers/SSO/ [Client.php:2886]
+2BE5 .|    |    |    |    <= 'http://localhost/msp-portal/helpers/SSO/'
+2BE5 .|    |    |    <= 'https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F'
+2BE5 .|    |    |    Redirect to : https://vinaphone.com.vn/auth//login?service=http%3A%2F%2Flocalhost%2Fmsp-portal%2Fhelpers%2FSSO%2F [Client.php:1257]
+2BE5 .|    |    |    exit()
+2BE5 .|    |    |    -
+2BE5 .|    |    -
+2BE5 .|    -
