@@ -74,8 +74,8 @@ class ApiHelper
             2 --> hot
             3 --> especial
      */
-    const API_CATEGORY_BY_CATEGORY = 'category/root-category';
-    const API_CONTENT_BY_CATEGORY = 'homes-slides';
+    const API_SONG = 'songs';
+    const API_SLIDE = 'homes-slides';
     const API_HOME = 'app/myvideo-home';
 
 

@@ -79,7 +79,7 @@ class SiteController extends BaseController
         try {
             //get list content
             $response = ApiHelper::apiQuery([
-                ApiHelper::API_CONTENT_BY_CATEGORY,
+                ApiHelper::API_SONG,
                 'filter' => 0,
                 'per-page' => Constants::_PER_PAGE_LIST,
                 'page' => $page,

@@ -24,7 +24,7 @@ class Slider extends Widget{
     public function init() {
         try {
             $response = ApiHelper::apiQuery([
-                ApiHelper::API_CONTENT_BY_CATEGORY,
+                ApiHelper::API_SLIDE,
             ], null, false);;
             if(ApiHelper::isResultSuccess($response)) {
                 if(!empty($response['data']['items'])) {
