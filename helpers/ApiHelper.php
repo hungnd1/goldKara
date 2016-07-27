@@ -77,6 +77,7 @@ class ApiHelper
     const API_SONG = 'songs';
     const API_SLIDE = 'homes-slides';
     const API_HOME = 'app/myvideo-home';
+    const API_CATEGORY = 'categories';
 
 
     /**

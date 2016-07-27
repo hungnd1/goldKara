@@ -29,7 +29,7 @@ use yii\helpers\Url;
         </span>
         <h4 class="media-heading name-content"> <?= $content->display_name?> </h4>
         <div class="clearfix"></div>
-        <p class="info-view"><img src="<?=Yii::$app->request->baseUrl?>/advance/images/ic-view.png" height="12"><span class="num-view"><?= $content->rating_count?></span><span
+        <p class="info-view"><img src="<?=Yii::$app->request->baseUrl?>/advance/images/ic-view.png" height="12"><span class="num-view"><?= $content->view_count?></span><span
                 class="price-view">
             </span>
         </p>

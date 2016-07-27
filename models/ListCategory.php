@@ -27,7 +27,7 @@ class ListCategory extends Model
     {
         parent::setAttributes($data, false);
         $this->items = [];
-        foreach ($this->categories as $items) {
+        foreach ($data as $items) {
             /* @var $category \app\models\Category */
             $category = new Category($items);
             array_push($this->items , $category);

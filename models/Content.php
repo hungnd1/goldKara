@@ -32,6 +32,7 @@ class Content extends Model {
     public $content_id;
     public $content_name;
     public $open_url;
+    public $view_count;
 
     public function __construct($data){
         parent::setAttributes($data, false);

@@ -29,16 +29,10 @@ use yii\widgets\ActiveForm;
                         href="<?= Url::toRoute(['site/category', 'type' => Constants::_TYPE_MUSIC]) ?>"><img
                             src="<?= Yii::$app->request->baseUrl ?>/advance/images/ic-music.png"><br>THỂ LOẠI</a>
                     <div class="dropdown-content">
-                        <a href="#">Nhạc Trẻ</a>
-                        <a href="#">Nhạc Thiếu Nhi</a>
-                        <a href="#">Nhạc Trữ Tình</a>
-                        <a href="#">Nhạc Cách Mạng</a>
-                        <a href="#">Nhạc Âu Mỹ</a>
-                        <a href="#">Nhạc Hàn Quốc</a>
-                        <a href="#">Nhạc Trung Quốc</a>
-                        <a href="#">Nhạc Campuchia</a>
-                        <a href="#">Nhạc Nhạc Quê Hương</a>
-                        <a href="#">Nhạc Dance</a>
+                        <?php  if(null != $category) {
+                        foreach($category->items as $item) {?>
+                            <a href=""><?= $item->name ?></a>
+                        <?php }}?>
                     </div>
                 </li>
                 <li <?= $route == Constants::_TYPE_FILM && $id == 0 ?  'class="active"' : '' ?>><div class="thea"><a
