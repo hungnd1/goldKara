@@ -14,9 +14,11 @@ use yii\helpers\Url;
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <?php if(null != $listSlideContent) {
+                    $i=0;
+                foreach($listSlideContent->items as $item) { ?>
+                <li data-target="#carousel-example-generic" data-slide-to="<?= $i ?>" <?php if($i==0){ ?> class="active" <?php } ?>></li>
+                <?php $i++;}}?>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -24,9 +26,11 @@ use yii\helpers\Url;
             <?php if(null != $listSlideContent) {
                 /* @var $listSlideContent \app\models\ListContents */
                 /* @var $item \app\models\Content */
-                foreach($listSlideContent->items as $item) {?>
-                    <div class="item active">
-                        <a href="<?=Url::toRoute(['view','id'=> $item->id])?>"><img src="<?=$item->img_slide?>" alt="..."></a>
+                $i=0;
+                foreach($listSlideContent->items as $item) { $i++;?>
+                    <div class="item <?php if($i== 1)echo "active"; ?>">
+                        <a href="<?=Url::toRoute(['view','id'=> $item->id])?>">
+                            <img src="<?=$item->image?>" alt="..."></a>
                     </div>
             <?php } } else {?>
                 <div class="item active">

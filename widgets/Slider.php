@@ -25,9 +25,6 @@ class Slider extends Widget{
         try {
             $response = ApiHelper::apiQuery([
                 ApiHelper::API_CONTENT_BY_CATEGORY,
-                'filter' => Constants::_FILTER_FEATURE,
-                'type' => Constants::_TYPE_FILM,
-                'per-page' => self::_PER_PAGE
             ], null, false);;
             if(ApiHelper::isResultSuccess($response)) {
                 if(!empty($response['data']['items'])) {

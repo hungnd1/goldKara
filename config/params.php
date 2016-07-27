@@ -9,6 +9,6 @@ return [
     'ip3G' =>[
         '127.0.0.1/16'
     ],
-    'client_api_key' =>'d8z03z4z6vyefuwndd93ytu2w1e0eoxi',
-    'crypt_key' => 'nn8gc368ovdtf06i35cspwkcop2s3q0h'
+    'client_api_key' =>'C0Q2I1AF5OFGODND',
+    'crypt_key' => 'SSO187KGZ2520XBB'
 ];

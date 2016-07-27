@@ -63,9 +63,9 @@ $config = [
         ],
         'urlManagerApi' => [
             'class' => 'yii\web\UrlManager',
-            'scriptUrl' => "http://api.kara.appwhoosh.com/",
+            'scriptUrl' => "http://api.goldkara.com:8088/",
             //'scriptUrl' => "http://msp-api.lc/",
-            'baseUrl' => "http://api.kara.appwhoosh.com/",
+            'baseUrl' => "http://api.goldkara.com:8088/",
             //'baseUrl' => "http://msp-api.lc/",
             'enablePrettyUrl' => true,
             'enableStrictParsing' => false,
